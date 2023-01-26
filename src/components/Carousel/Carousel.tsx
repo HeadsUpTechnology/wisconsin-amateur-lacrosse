@@ -14,11 +14,12 @@ const Carousel = () => {
 			spaceBetween={50}
 			className={styles.swiper}
 			coverflowEffect={{
-				rotate: 50,
+				rotate: 20,
 				stretch: 0,
-				depth: 100,
+				depth: -100,
 				modifier: 1,
 			}}
+			effect="coverflow"
 			modules={[EffectCoverflow]}
 		>
 			{
