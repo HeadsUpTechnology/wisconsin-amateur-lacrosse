@@ -10,10 +10,8 @@
     "test": "jest"
   },
   "dependencies": {
-    "@google-cloud/firestore": "^6.4.2",
     "@next/font": "13.1.5",
     "firebase": "^9.16.0",
-    "firebase-admin": "^11.5.0",
     "next": "13.1.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
