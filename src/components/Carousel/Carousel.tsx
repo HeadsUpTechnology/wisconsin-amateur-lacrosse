@@ -9,7 +9,7 @@ import { DOMElement, useEffect, useRef, useState } from 'react';
 const Carousel = () => {
 	const items = ["Item 1", "Item 2", "Item 3", "Item 4", "Item 5", "Item 6", "Item 7", "Item 8", "Item 9", "Item 0"];
 	const swiperRef = useRef<SwiperRef | any>(null);
-	const spacerRef = useRef<HTMLElement>(null);
+	const spacerRef = useRef<HTMLDivElement>(null);
 	const [ height, setHeight ] = useState(0);
 
 	useEffect(() => {
