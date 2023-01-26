@@ -21,38 +21,34 @@ const Carousel = () => {
 	}, []);
 
 	return (
-		<>
 		<div style={{ "minHeight": `${height}px` }} ref={spacerRef}>
-			
-		</div>
-		<Swiper
-		ref={swiperRef}
-		slidesPerView={5}
-		spaceBetween={50}
-		className={styles.swiper}
-		coverflowEffect={{
-			rotate: 20,
-			stretch: 0,
-			depth: -100,
-			modifier: 2,
-		}}
-		effect="coverflow"
-		modules={[EffectCoverflow]}
-		style={{ top: `${spacerRef.current?.offsetTop}px` }}
-	>
-		{
-			items.map(i => 
-			<SwiperSlide 
-				className={styles.item}
-				key={i}
-			>
-				<div className={styles.content}>
-					{i}
-				</div>
-			</SwiperSlide>)
-		}
-	</Swiper>
-	</>
+			<Swiper
+			ref={swiperRef}
+			slidesPerView={5}
+			spaceBetween={50}
+			className={styles.swiper}
+			coverflowEffect={{
+				rotate: 20,
+				stretch: 0,
+				depth: -100,
+				modifier: 2,
+			}}
+			effect="coverflow"
+			modules={[EffectCoverflow]}
+		>
+			{
+				items.map(i => 
+				<SwiperSlide 
+					className={styles.item}
+					key={i}
+				>
+					<div className={styles.content}>
+						{i}
+					</div>
+				</SwiperSlide>)
+			}
+		</Swiper>
+	</div>
 	)
 }
 
