@@ -1,0 +1,13 @@
+.swiper {
+	position: absolute;
+	width: 104%;
+	left: -2%;
+}
+
+.item {
+	border: 2px solid white;
+	border-radius: 1em; 
+	min-height: 18em;
+	min-width: 12em;
+	background-color: black;
+}

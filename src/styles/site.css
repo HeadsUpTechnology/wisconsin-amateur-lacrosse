@@ -1,0 +1,104 @@
+@import url('/images/border.png');
+
+body {
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 48px;
+}
+
+a.social-button {
+	border-radius: 50%;
+	background-color: white;
+	color: black;
+	font-size: 2rem;
+	padding: .25em;
+	width: 1em;
+	height: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	bottom: 0;
+	padding: 3em 0;
+}
+
+footer > * {
+	transition: transform 100ms ease-in;
+}
+
+footer > * + * {
+	margin-left: 1em;
+}
+
+footer > *:hover {
+	transform: scale(1.5);
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+header > a {
+	border-radius: 2em;
+	border: 2px solid white;
+	padding: .5em 2em;
+	margin: 0 2em;
+	font-family: Ubuntu, sans-serif;
+	text-decoration: none;
+	color: white;
+}
+
+header > a:hover, header > a.active {
+	background-color: white;
+	color: black;
+}
+
+#content {
+	position: relative;
+	margin: 2em;
+	margin-top: 3em;
+	padding: 2em;
+	border-image: url('/images/border.png') 2;
+	border-image-width: 3px;
+	border-top: 3px solid white;
+	border-bottom: 0;
+	min-height: calc(100vh - 10em);
+}
+
+#content::before {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -1em;
+	height: 5em;
+	border-radius: 1em;
+	border: 3px solid white;
+	border-bottom: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	content: '';
+	z-index: -1;
+}
+
+h1.header {
+	text-align: center;
+	margin-top: 3em;
+}
