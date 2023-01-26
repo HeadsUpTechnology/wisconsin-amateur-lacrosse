@@ -1,0 +1,64 @@
+[debug] [2023-01-26T18:41:58.389Z] ----------------------------------------------------------------------
+[debug] [2023-01-26T18:41:58.390Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dench\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-26T18:41:58.390Z] CLI Version:   11.21.0
+[debug] [2023-01-26T18:41:58.390Z] Platform:      win32
+[debug] [2023-01-26T18:41:58.390Z] Node Version:  v16.13.1
+[debug] [2023-01-26T18:41:58.391Z] Time:          Thu Jan 26 2023 12:41:58 GMT-0600 (Central Standard Time)
+[debug] [2023-01-26T18:41:58.391Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-26T18:41:58.467Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-26T18:41:58.467Z] > authorizing via signed-in user (patrick.dench@headsup.technology)
+[debug] [2023-01-26T18:41:58.467Z] [iam] checking project wal-dev-1de7b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-26T18:41:58.469Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions [none]
+[debug] [2023-01-26T18:41:58.469Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions x-goog-quota-user=projects/wal-dev-1de7b
+[debug] [2023-01-26T18:41:58.469Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-26T18:41:58.647Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions 200
+[debug] [2023-01-26T18:41:58.647Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-26T18:41:58.647Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wal-dev-1de7b [none]
+[debug] [2023-01-26T18:41:58.802Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wal-dev-1de7b 200
+[debug] [2023-01-26T18:41:58.802Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wal-dev-1de7b {"projectId":"wal-dev-1de7b","projectNumber":"209985808393","displayName":"wal-dev","name":"projects/wal-dev-1de7b","resources":{"hostingSite":"wal-dev-1de7b"},"state":"ACTIVE","etag":"1_16060fea-9b10-4541-b913-3b2dbcf8edf8"}
+[debug] [2023-01-26T18:42:00.958Z] defaultcredentials: writing to file C:\Users\dench\AppData\Roaming\firebase\patrick_dench_headsup.technology_application_default_credentials.json
+[debug] [2023-01-26T18:42:00.960Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wal-dev-1de7b/sites pageToken=&pageSize=10
+[debug] [2023-01-26T18:42:01.336Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wal-dev-1de7b/sites 200
+[debug] [2023-01-26T18:42:01.337Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wal-dev-1de7b/sites {"sites":[{"name":"projects/wal-dev-1de7b/sites/wal-dev-1de7b","defaultUrl":"https://wal-dev-1de7b.web.app","appId":"1:209985808393:web:a6caa0f1f79dcc677c70d8","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-26T18:42:01.337Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:209985808393:web:a6caa0f1f79dcc677c70d8/config [none]
+[debug] [2023-01-26T18:42:01.653Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:209985808393:web:a6caa0f1f79dcc677c70d8/config 200
+[debug] [2023-01-26T18:42:01.653Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:209985808393:web:a6caa0f1f79dcc677c70d8/config {"projectId":"wal-dev-1de7b","appId":"1:209985808393:web:a6caa0f1f79dcc677c70d8","storageBucket":"wal-dev-1de7b.appspot.com","apiKey":"AIzaSyDYwqATMtz7ibLjnLIyE_rGs7S11j4CEcU","authDomain":"wal-dev-1de7b.firebaseapp.com","messagingSenderId":"209985808393","measurementId":"G-0G6N8NK0W1"}
+[debug] [2023-01-26T18:42:14.435Z] TypeError: Cannot read properties of null (reading 'toString')
+    at ɵcodegenFunctionsDirectory (C:\Users\dench\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:220:18)
+    at async prepareFrameworks (C:\Users\dench\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:305:84)
+    at async deploy (C:\Users\dench\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-01-26T18:42:29.941Z] ----------------------------------------------------------------------
+[debug] [2023-01-26T18:42:29.943Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dench\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-01-26T18:42:29.943Z] CLI Version:   11.21.0
+[debug] [2023-01-26T18:42:29.943Z] Platform:      win32
+[debug] [2023-01-26T18:42:29.943Z] Node Version:  v16.13.1
+[debug] [2023-01-26T18:42:29.944Z] Time:          Thu Jan 26 2023 12:42:29 GMT-0600 (Central Standard Time)
+[debug] [2023-01-26T18:42:29.944Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-26T18:42:29.997Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-26T18:42:29.997Z] > authorizing via signed-in user (patrick.dench@headsup.technology)
+[debug] [2023-01-26T18:42:29.997Z] [iam] checking project wal-dev-1de7b for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-01-26T18:42:29.999Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions [none]
+[debug] [2023-01-26T18:42:29.999Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions x-goog-quota-user=projects/wal-dev-1de7b
+[debug] [2023-01-26T18:42:29.999Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-26T18:42:30.147Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions 200
+[debug] [2023-01-26T18:42:30.147Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/wal-dev-1de7b:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-01-26T18:42:30.148Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wal-dev-1de7b [none]
+[debug] [2023-01-26T18:42:30.326Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wal-dev-1de7b 200
+[debug] [2023-01-26T18:42:30.326Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wal-dev-1de7b {"projectId":"wal-dev-1de7b","projectNumber":"209985808393","displayName":"wal-dev","name":"projects/wal-dev-1de7b","resources":{"hostingSite":"wal-dev-1de7b"},"state":"ACTIVE","etag":"1_16060fea-9b10-4541-b913-3b2dbcf8edf8"}
+[debug] [2023-01-26T18:42:32.462Z] defaultcredentials: writing to file C:\Users\dench\AppData\Roaming\firebase\patrick_dench_headsup.technology_application_default_credentials.json
+[debug] [2023-01-26T18:42:32.463Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/wal-dev-1de7b/sites pageToken=&pageSize=10
+[debug] [2023-01-26T18:42:32.781Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/wal-dev-1de7b/sites 200
+[debug] [2023-01-26T18:42:32.781Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/wal-dev-1de7b/sites {"sites":[{"name":"projects/wal-dev-1de7b/sites/wal-dev-1de7b","defaultUrl":"https://wal-dev-1de7b.web.app","appId":"1:209985808393:web:a6caa0f1f79dcc677c70d8","type":"DEFAULT_SITE"}]}
+[debug] [2023-01-26T18:42:32.782Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:209985808393:web:a6caa0f1f79dcc677c70d8/config [none]
+[debug] [2023-01-26T18:42:33.167Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:209985808393:web:a6caa0f1f79dcc677c70d8/config 200
+[debug] [2023-01-26T18:42:33.167Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:209985808393:web:a6caa0f1f79dcc677c70d8/config {"projectId":"wal-dev-1de7b","appId":"1:209985808393:web:a6caa0f1f79dcc677c70d8","storageBucket":"wal-dev-1de7b.appspot.com","apiKey":"AIzaSyDYwqATMtz7ibLjnLIyE_rGs7S11j4CEcU","authDomain":"wal-dev-1de7b.firebaseapp.com","messagingSenderId":"209985808393","measurementId":"G-0G6N8NK0W1"}
+[debug] [2023-01-26T18:42:45.367Z] TypeError: Cannot read properties of null (reading 'toString')
+    at ɵcodegenFunctionsDirectory (C:\Users\dench\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:220:18)
+    at async prepareFrameworks (C:\Users\dench\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:305:84)
+    at async deploy (C:\Users\dench\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

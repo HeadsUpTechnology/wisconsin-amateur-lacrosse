@@ -4,10 +4,13 @@ body {
 	background-color: black;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	color: white;
 	font-family: 'Ubuntu', sans-serif;
 	padding: 0;
 	margin: 0;
+	background-image: url('/images/stick-perspective.png');
 }
 
 h1 {
@@ -30,12 +33,10 @@ a.social-button {
 }
 
 footer {
-	position: fixed;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	bottom: 0;
-	padding: 3em 0;
+	padding-bottom: 3em;
 }
 
 footer > * {
@@ -73,14 +74,14 @@ header > a:hover, header > a.active {
 
 #content {
 	position: relative;
-	margin: 2em;
-	margin-top: 3em;
-	padding: 2em;
 	border-image: url('/images/border.png') 2;
 	border-image-width: 3px;
 	border-top: 3px solid white;
 	border-bottom: 0;
 	min-height: calc(100vh - 10em);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 #content::before {
@@ -98,7 +99,12 @@ header > a:hover, header > a.active {
 	z-index: -1;
 }
 
+main {
+	min-height: calc(100vh - 5em);
+	padding: 3em 2em 0 2em;
+}
+
 h1.header {
 	text-align: center;
-	margin-top: 3em;
+	margin-top: 1em;
 }

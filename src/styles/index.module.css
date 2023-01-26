@@ -4,6 +4,6 @@
 	align-items: center;
 }
 
-.header > * {
-	padding-bottom: 2em;
+.header > header {
+	padding: 2em;
 }

@@ -9,9 +9,8 @@ export default function Document() {
 				<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=optional"></link>
 			</Head>
       <body>
-        <Main />
-				<Footer />
-        <NextScript />
+				<Main />
+				<NextScript />
       </body>
     </Html>
   )

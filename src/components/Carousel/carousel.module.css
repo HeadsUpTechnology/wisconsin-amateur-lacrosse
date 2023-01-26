@@ -9,6 +9,16 @@
 	border: 2px solid white;
 	border-radius: 1em; 
 	min-height: 18em;
-	min-width: 12em;
+	width: 12em !important;
 	background-color: black;
+	padding: .25em;
+	overflow: hidden;
+}
+
+.content {
+	width: 100em;
+	background-image: linear-gradient(darkgray 5%, black 20%);
+	background-clip: border-box;
+	background-size: cover;
+	height: 18em;
 }

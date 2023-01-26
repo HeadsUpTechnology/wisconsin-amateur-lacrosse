@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { AnchorHTMLAttributes, DOMElement, useEffect } from 'react';
 import Link from 'next/link';
 
 interface MenuProps {}
@@ -8,7 +8,7 @@ const Header = () => {
 		const menuLinks = document.querySelectorAll('header>a');
 
 		menuLinks.forEach(link => {
-			if(link.href === window.location.href) {
+			if((link as HTMLAnchorElement).href === window.location.href) {
 				link.classList.add('active');
 			}
 		})

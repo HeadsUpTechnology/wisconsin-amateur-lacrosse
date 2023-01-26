@@ -5,7 +5,9 @@
 	color: black;
 	width: 20em;
 	height: 1em;
-	padding-left: 10px;
+	padding: .5em;
+	font-size: large;
+	text-align: center;
 }
 
 .searchBox:focus {
