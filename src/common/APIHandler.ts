@@ -25,7 +25,7 @@ class APIHandler implements IAPIHandler {
 			projectId: process.env.FIRESTORE_PROJECT_ID,
 		})
 
-		this.db = getFirestore(app);
+		this.db = getFirestore()
 	}
 
 	handler = async (req: NextApiRequest, res: NextApiResponse) => {
